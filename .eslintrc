@@ -1,0 +1,38 @@
+{
+  "extends": ["airbnb-base", "eslint:recommended", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "legacyDecorators": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "commonjs": true,
+    "browser": true
+  },
+  "rules": {
+    "class-methods-use-this": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/react-in-jsx-scope": "off",
+    "comma-dangle": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@", "./src"],
+          ["src", "./src"],
+          ["components", "./src/components"],
+          ["pages", "./src/pages"],
+          ["utils", "./src/utils"],
+          ["stores", "./src/stores"]
+        ],
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  }
+}

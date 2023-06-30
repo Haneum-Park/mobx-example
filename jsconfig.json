@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "src/*": ["./src/*"],
+      "components/*": ["./src/components/*"],
+      "pages/*": ["./src/pages/*"],
+      "utils/*": ["./src/utils/*"],
+      "stores/*": ["./src/stores/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}
