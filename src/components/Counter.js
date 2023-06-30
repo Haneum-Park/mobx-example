@@ -2,6 +2,7 @@ import React from 'react';
 import { observer } from 'mobx-react';
 import PropType from 'prop-types';
 
+// NOTE 이 부분이 counter를 관찰하는 컴포넌트
 @observer
 class Counter extends React.Component {
   static propTypes = {
